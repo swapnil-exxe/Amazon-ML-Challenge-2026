@@ -60,3 +60,11 @@ env/
 dist/
 build/
 *.egg-info/
+
+# Allow important result files under 100MB
+!go2_output/matching_results.tsv
+!go2_output/matching_results_v2.tsv
+!spp_optimization/experiments/dev_ground_truth.tsv
+!go2_output/go2_inference.log
+!go2_output/go2_inference_v2.log
+!go1_output/phase_3_blocking/logs/

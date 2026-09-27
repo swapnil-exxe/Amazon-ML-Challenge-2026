@@ -1,0 +1,83 @@
+==================================================
+  GO2 PHASE 4: FAST RESUME STREAMING INFERENCE
+==================================================
+Loading trained model from: /Users/swapnil/Documents/ML/go2_output/go2_model.joblib
+Model loaded successfully. Expected feature count: 16
+Reading required test S1 entity list...
+Reading existing results file for resume check: /Users/swapnil/Documents/ML/go2_output/matching_results.tsv
+RESUME DETECTED: 100,000 S1 entities already processed. Preserving existing rows!
+Target test S1 count: 1,732,544 entities | Already done: 100,000 | Remaining: 1,632,544
+Candidate file size: 4.83 GB
+
+--- FAST 1-PASS FEATURE TUPLE INDEXING (1.8 GB RAM) ---
+Indexing clean S1 test features...
+Loaded 1,732,544 S1 features.
+Indexing clean S2 test features...
+Loaded 4,887,273 S2 features.
+Indexing clean S3 test features...
+Loaded 5,082,316 S3 features.
+All S1/S2/S3 features indexed in 27.35 seconds! Current RAM: 6.38 GB
+
+--- ULTRA-FAST STREAMING INFERENCE ---
+[Chunk 3/35] Progress: 150,000/1,732,544 S1 entities (8.66%) | New S1s in chunk: 50,000 | Pairs: 11,550,591 | File Size: 6.56 MB | Elapsed: 1.58m | Est. Remaining: 50.13m
+[Chunk 4/35] Progress: 200,000/1,732,544 S1 entities (11.54%) | New S1s in chunk: 50,000 | Pairs: 11,576,601 | File Size: 8.76 MB | Elapsed: 2.66m | Est. Remaining: 40.83m
+[Chunk 5/35] Progress: 250,000/1,732,544 S1 entities (14.43%) | New S1s in chunk: 50,000 | Pairs: 11,597,608 | File Size: 10.94 MB | Elapsed: 3.74m | Est. Remaining: 36.96m
+[Chunk 6/35] Progress: 300,000/1,732,544 S1 entities (17.32%) | New S1s in chunk: 50,000 | Pairs: 11,557,996 | File Size: 13.12 MB | Elapsed: 4.84m | Est. Remaining: 34.66m
+[Chunk 7/35] Progress: 350,000/1,732,544 S1 entities (20.20%) | New S1s in chunk: 50,000 | Pairs: 11,577,191 | File Size: 15.32 MB | Elapsed: 5.95m | Est. Remaining: 32.92m
+[Chunk 8/35] Progress: 400,000/1,732,544 S1 entities (23.09%) | New S1s in chunk: 50,000 | Pairs: 11,561,614 | File Size: 17.51 MB | Elapsed: 8.51m | Est. Remaining: 37.80m
+[Chunk 9/35] Progress: 450,000/1,732,544 S1 entities (25.97%) | New S1s in chunk: 50,000 | Pairs: 11,532,328 | File Size: 19.71 MB | Elapsed: 11.02m | Est. Remaining: 40.39m
+[Chunk 10/35] Progress: 500,000/1,732,544 S1 entities (28.86%) | New S1s in chunk: 50,000 | Pairs: 11,555,439 | File Size: 21.90 MB | Elapsed: 13.56m | Est. Remaining: 41.79m
+[Chunk 11/35] Progress: 550,000/1,732,544 S1 entities (31.75%) | New S1s in chunk: 50,000 | Pairs: 11,598,916 | File Size: 24.08 MB | Elapsed: 16.03m | Est. Remaining: 42.11m
+[Chunk 12/35] Progress: 600,000/1,732,544 S1 entities (34.63%) | New S1s in chunk: 50,000 | Pairs: 11,582,009 | File Size: 26.27 MB | Elapsed: 18.88m | Est. Remaining: 42.76m
+[Chunk 13/35] Progress: 650,000/1,732,544 S1 entities (37.52%) | New S1s in chunk: 50,000 | Pairs: 11,631,666 | File Size: 28.46 MB | Elapsed: 21.26m | Est. Remaining: 41.84m
+[Chunk 14/35] Progress: 700,000/1,732,544 S1 entities (40.40%) | New S1s in chunk: 50,000 | Pairs: 11,579,728 | File Size: 30.65 MB | Elapsed: 23.95m | Est. Remaining: 41.22m
+[Chunk 15/35] Progress: 750,000/1,732,544 S1 entities (43.29%) | New S1s in chunk: 50,000 | Pairs: 11,584,407 | File Size: 32.85 MB | Elapsed: 26.76m | Est. Remaining: 40.45m
+[Chunk 16/35] Progress: 800,000/1,732,544 S1 entities (46.17%) | New S1s in chunk: 50,000 | Pairs: 11,589,552 | File Size: 35.05 MB | Elapsed: 29.81m | Est. Remaining: 39.71m
+[Chunk 17/35] Progress: 850,000/1,732,544 S1 entities (49.06%) | New S1s in chunk: 50,000 | Pairs: 11,528,881 | File Size: 37.25 MB | Elapsed: 32.96m | Est. Remaining: 38.78m
+[Chunk 18/35] Progress: 900,000/1,732,544 S1 entities (51.95%) | New S1s in chunk: 50,000 | Pairs: 11,630,718 | File Size: 39.44 MB | Elapsed: 35.06m | Est. Remaining: 36.49m
+[Chunk 19/35] Progress: 950,000/1,732,544 S1 entities (54.83%) | New S1s in chunk: 50,000 | Pairs: 11,581,454 | File Size: 41.64 MB | Elapsed: 37.26m | Est. Remaining: 34.30m
+[Chunk 20/35] Progress: 1,000,000/1,732,544 S1 entities (57.72%) | New S1s in chunk: 50,000 | Pairs: 11,571,470 | File Size: 43.83 MB | Elapsed: 39.84m | Est. Remaining: 32.43m
+[Chunk 21/35] Progress: 1,050,000/1,732,544 S1 entities (60.60%) | New S1s in chunk: 50,000 | Pairs: 11,559,926 | File Size: 46.02 MB | Elapsed: 42.70m | Est. Remaining: 30.68m
+[Chunk 22/35] Progress: 1,100,000/1,732,544 S1 entities (63.49%) | New S1s in chunk: 50,000 | Pairs: 11,575,554 | File Size: 48.22 MB | Elapsed: 45.51m | Est. Remaining: 28.79m
+[Chunk 23/35] Progress: 1,150,000/1,732,544 S1 entities (66.38%) | New S1s in chunk: 50,000 | Pairs: 11,576,968 | File Size: 50.40 MB | Elapsed: 48.36m | Est. Remaining: 26.83m
+[Chunk 24/35] Progress: 1,200,000/1,732,544 S1 entities (69.26%) | New S1s in chunk: 50,000 | Pairs: 11,539,432 | File Size: 52.59 MB | Elapsed: 51.25m | Est. Remaining: 24.81m
+[Chunk 25/35] Progress: 1,250,000/1,732,544 S1 entities (72.15%) | New S1s in chunk: 50,000 | Pairs: 11,563,843 | File Size: 54.78 MB | Elapsed: 54.27m | Est. Remaining: 22.77m
+[Chunk 26/35] Progress: 1,300,000/1,732,544 S1 entities (75.03%) | New S1s in chunk: 50,000 | Pairs: 11,543,851 | File Size: 56.98 MB | Elapsed: 57.01m | Est. Remaining: 20.55m
+[Chunk 27/35] Progress: 1,350,000/1,732,544 S1 entities (77.92%) | New S1s in chunk: 50,000 | Pairs: 11,629,904 | File Size: 59.16 MB | Elapsed: 59.92m | Est. Remaining: 18.34m
+[Chunk 28/35] Progress: 1,400,000/1,732,544 S1 entities (80.81%) | New S1s in chunk: 50,000 | Pairs: 11,615,044 | File Size: 61.36 MB | Elapsed: 63.01m | Est. Remaining: 16.12m
+[Chunk 29/35] Progress: 1,450,000/1,732,544 S1 entities (83.69%) | New S1s in chunk: 50,000 | Pairs: 11,595,038 | File Size: 63.55 MB | Elapsed: 66.11m | Est. Remaining: 13.84m
+[Chunk 30/35] Progress: 1,500,000/1,732,544 S1 entities (86.58%) | New S1s in chunk: 50,000 | Pairs: 11,537,205 | File Size: 65.76 MB | Elapsed: 69.20m | Est. Remaining: 11.49m
+[Chunk 31/35] Progress: 1,550,000/1,732,544 S1 entities (89.46%) | New S1s in chunk: 50,000 | Pairs: 11,561,420 | File Size: 67.94 MB | Elapsed: 72.28m | Est. Remaining: 9.10m
+[Chunk 32/35] Progress: 1,600,000/1,732,544 S1 entities (92.35%) | New S1s in chunk: 50,000 | Pairs: 11,582,364 | File Size: 70.13 MB | Elapsed: 75.41m | Est. Remaining: 6.66m
+[Chunk 33/35] Progress: 1,650,000/1,732,544 S1 entities (95.24%) | New S1s in chunk: 50,000 | Pairs: 11,550,281 | File Size: 72.32 MB | Elapsed: 78.11m | Est. Remaining: 4.16m
+[Chunk 34/35] Progress: 1,700,000/1,732,544 S1 entities (98.12%) | New S1s in chunk: 50,000 | Pairs: 11,530,833 | File Size: 74.51 MB | Elapsed: 79.22m | Est. Remaining: 1.61m
+[Chunk 35/35] Progress: 1,732,544/1,732,544 S1 entities (100.00%) | New S1s in chunk: 32,544 | Pairs: 7,542,743 | File Size: 75.95 MB | Elapsed: 147.66m | Est. Remaining: 0.00m
+
+Streaming Test Set Inference completed in 9775.00 seconds (2.72 hours).
+
+--- SUBMISSION VALIDATION & REPORTING ---
+Validator Output:
+ ML Challenge 2026 — submission validator
+  test dir: /Users/swapnil/Documents/ML/student_resource/dataset/test
+  required S1 entities: 1732544
+  matching_results.tsv: 1732544 rows (403389 empty, 1329155 non-empty).
+
+WARNING: ID-existence check is OFF (the default) — not checking that matched/candidate IDs exist in the test set. Every other rule is still checked. Re-run with --check-ids to enable it (needs test_source2/3.tsv; uses more memory). A nonexistent ID only lowers your score, never rejects your submission.
+WARNING: output/candidate_pairs.tsv not found — skipping candidate_pairs.tsv checks. It is optional here, but your final submission zip must include output/candidate_pairs.tsv.
+PASS — no blocking issues found. Safe to submit.
+
+
+==================================================
+  GO2 INFERENCE PIPELINE COMPLETED SUCCESSFULLY
+==================================================
+{
+  "status": "COMPLETE",
+  "test_inference_time_sec": 9775.0,
+  "total_execution_time_hours": 2.72,
+  "peak_ram_mb": 6651.91,
+  "disk_free_gb": 9.44,
+  "total_test_s1_entities": 1732544,
+  "submission_validation": "PASS",
+  "output_matching_results": "/Users/swapnil/Documents/ML/go2_output/matching_results.tsv",
+  "model_checkpoint": "/Users/swapnil/Documents/ML/go2_output/go2_model.joblib"
+}

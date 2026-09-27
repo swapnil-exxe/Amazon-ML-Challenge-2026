@@ -1,0 +1,51 @@
+==================================================
+  GO2 PHASE 4: COUNTRY-SPECIFIC INFERENCE (v2)
+==================================================
+Loading trained model from: /Users/swapnil/Documents/ML/go2_output/go2_model.joblib
+Reading test S1 country mapping...
+Reading existing v2 results file for resume check: /Users/swapnil/Documents/ML/go2_output/matching_results_v2.tsv
+RESUME DETECTED: 0 S1 entities already done in v2!
+
+--- FAST 1-PASS FEATURE TUPLE INDEXING ---
+
+--- STREAMING INFERENCE WITH COUNTRY THRESHOLDS ---
+Policy: US (p>=0.60) | India (p>=0.50) | France (p>=0.35, fallback 0.30)
+[Chunk 1/35] Progress: 50,000/1,732,544 S1 entities (2.89%) | Elapsed: 3.32m
+[Chunk 2/35] Progress: 100,000/1,732,544 S1 entities (5.77%) | Elapsed: 4.54m
+[Chunk 3/35] Progress: 150,000/1,732,544 S1 entities (8.66%) | Elapsed: 5.77m
+[Chunk 4/35] Progress: 200,000/1,732,544 S1 entities (11.54%) | Elapsed: 8.03m
+[Chunk 5/35] Progress: 250,000/1,732,544 S1 entities (14.43%) | Elapsed: 10.36m
+[Chunk 6/35] Progress: 300,000/1,732,544 S1 entities (17.32%) | Elapsed: 11.72m
+[Chunk 7/35] Progress: 350,000/1,732,544 S1 entities (20.20%) | Elapsed: 13.06m
+[Chunk 8/35] Progress: 400,000/1,732,544 S1 entities (23.09%) | Elapsed: 15.15m
+[Chunk 9/35] Progress: 450,000/1,732,544 S1 entities (25.97%) | Elapsed: 17.44m
+[Chunk 10/35] Progress: 500,000/1,732,544 S1 entities (28.86%) | Elapsed: 20.02m
+[Chunk 11/35] Progress: 550,000/1,732,544 S1 entities (31.75%) | Elapsed: 22.73m
+[Chunk 12/35] Progress: 600,000/1,732,544 S1 entities (34.63%) | Elapsed: 25.27m
+[Chunk 13/35] Progress: 650,000/1,732,544 S1 entities (37.52%) | Elapsed: 28.18m
+[Chunk 14/35] Progress: 700,000/1,732,544 S1 entities (40.40%) | Elapsed: 32.21m
+[Chunk 15/35] Progress: 750,000/1,732,544 S1 entities (43.29%) | Elapsed: 36.91m
+[Chunk 16/35] Progress: 800,000/1,732,544 S1 entities (46.17%) | Elapsed: 40.80m
+[Chunk 17/35] Progress: 850,000/1,732,544 S1 entities (49.06%) | Elapsed: 44.69m
+[Chunk 18/35] Progress: 900,000/1,732,544 S1 entities (51.95%) | Elapsed: 47.19m
+[Chunk 19/35] Progress: 950,000/1,732,544 S1 entities (54.83%) | Elapsed: 49.36m
+[Chunk 20/35] Progress: 1,000,000/1,732,544 S1 entities (57.72%) | Elapsed: 50.77m
+[Chunk 21/35] Progress: 1,050,000/1,732,544 S1 entities (60.60%) | Elapsed: 52.51m
+[Chunk 22/35] Progress: 1,100,000/1,732,544 S1 entities (63.49%) | Elapsed: 54.63m
+[Chunk 23/35] Progress: 1,150,000/1,732,544 S1 entities (66.38%) | Elapsed: 59.06m
+[Chunk 24/35] Progress: 1,200,000/1,732,544 S1 entities (69.26%) | Elapsed: 62.03m
+[Chunk 25/35] Progress: 1,250,000/1,732,544 S1 entities (72.15%) | Elapsed: 66.60m
+[Chunk 26/35] Progress: 1,300,000/1,732,544 S1 entities (75.03%) | Elapsed: 70.41m
+[Chunk 27/35] Progress: 1,350,000/1,732,544 S1 entities (77.92%) | Elapsed: 74.41m
+[Chunk 28/35] Progress: 1,400,000/1,732,544 S1 entities (80.81%) | Elapsed: 77.74m
+[Chunk 29/35] Progress: 1,450,000/1,732,544 S1 entities (83.69%) | Elapsed: 81.04m
+[Chunk 30/35] Progress: 1,500,000/1,732,544 S1 entities (86.58%) | Elapsed: 84.19m
+[Chunk 31/35] Progress: 1,550,000/1,732,544 S1 entities (89.46%) | Elapsed: 87.15m
+[Chunk 32/35] Progress: 1,600,000/1,732,544 S1 entities (92.35%) | Elapsed: 88.93m
+[Chunk 33/35] Progress: 1,650,000/1,732,544 S1 entities (95.24%) | Elapsed: 90.26m
+[Chunk 34/35] Progress: 1,700,000/1,732,544 S1 entities (98.12%) | Elapsed: 94.72m
+[Chunk 35/35] Progress: 1,732,544/1,732,544 S1 entities (100.00%) | Elapsed: 97.40m
+
+==================================================
+  GO2 INFERENCE v2 COMPLETED SUCCESSFULLY
+==================================================
