@@ -1,0 +1,56 @@
+{
+  "status": "COMPLETE",
+  "phase_1_verified": true,
+  "phase_2_verified": true,
+  "phase_3_verified": true,
+  "final_configuration": {
+    "blocking_method": "Multi-Pass Country-Partitioned Inverted Indexing",
+    "candidate_cap_per_s1": 350
+  },
+  "train": {
+    "count": 2206821,
+    "total_candidates": 621736279,
+    "mean": 281.73,
+    "median": 350.0,
+    "p90": 350.0,
+    "p95": 350.0,
+    "p99": 350.0,
+    "max": 350,
+    "zero_candidates": 152282
+  },
+  "test": {
+    "count": 1732544,
+    "total_candidates": 401025269,
+    "mean": 231.47,
+    "median": 332.0,
+    "p90": 350.0,
+    "p95": 350.0,
+    "p99": 350.0,
+    "max": 350,
+    "zero_candidates": 178892
+  },
+  "ground_truth": {
+    "total_gt_pairs": 7638365,
+    "found_gt_pairs": 5966972,
+    "missed_gt_pairs": 1671393,
+    "pair_recall": 78.1184,
+    "s1_with_matches": 2083574,
+    "s1_all_matches_found": 1232130,
+    "s1_coverage": 59.1354
+  },
+  "validation": {
+    "original_data_safe": true,
+    "train_rows_valid": true,
+    "test_rows_valid": true,
+    "no_duplicate_s1": true,
+    "no_duplicate_candidates": true,
+    "no_s1_as_candidate": true,
+    "country_isolation_enforced": true
+  },
+  "disk": {
+    "total_candidate_storage_gb": 12.2,
+    "remaining_free_space_gb": 4.8,
+    "status": "SAFE"
+  },
+  "handoff_ready": true
+}

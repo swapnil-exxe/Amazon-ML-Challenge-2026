@@ -1,0 +1,8 @@
+Experiment,Description,Cap_Limit,Enable_Skeleton,Blocking_Recall,Candidates_Per_Query_Avg,Candidates_Per_Query_P95,Estimated_Macro_F05,Runtime_Sec
+Exp_A,Baseline V2 (Cap 350),350,False,6.5869,344.55,350.0,0.2522,24.31
+Exp_B,V2 + Cap Expansion (Cap 500),500,False,8.2264,489.92,500.0,0.2976,25.55
+Exp_C,V2 + Cap Expansion (Cap 750),750,False,10.5966,730.21,750.0,0.3551,23.24
+Exp_D,V2 + Cap Expansion (Cap 1000),1000,False,12.8689,968.2,1000.0,0.4028,23.76
+Exp_E,V2 + Consonant Skeleton (Cap 350),350,True,6.5869,344.55,350.0,0.2522,24.1
+Exp_F,V2 + Consonant Skeleton + Cap 500,500,True,8.2264,489.92,500.0,0.2976,23.73
+Exp_G,V2 + Consonant Skeleton + Cap 750,750,True,10.5966,730.21,750.0,0.3551,22.99

@@ -1,0 +1,2 @@
+population_size,training_population,validation_population,number_of_queries,positive_pairs,negative_pairs,blocking_recall,us_blocking_recall,india_blocking_recall,candidate_precision,candidate_recall,candidate_f1,candidates_per_query_avg,candidates_per_query_median,candidates_per_query_p95,candidates_per_query_max,zero_candidate_count,zero_candidate_pct,missing_true_pairs,end_to_end_precision,end_to_end_recall,macro_f05
+2206821,2206821,2206821,2206821,7638365,614097914,78.1184,76.9604,79.8513,0.96,78.1184,86.13,281.73,350.0,350.0,350,152282,6.9,1671393,86.15,57.3,0.7854

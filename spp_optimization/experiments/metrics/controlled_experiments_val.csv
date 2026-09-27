@@ -1,0 +1,9 @@
+Experiment_ID,Description,Max_Posting_Limit,Cap_Limit,Enable_Preranking,Blocking_Recall,Avg_Candidates,P95_Candidates,Estimated_Macro_F05,Runtime_Sec
+EXP-A1,"Baseline V2 (Limit 3k, Cap 350, Unranked)",3000,350,False,64.2503,281.28,350.0,0.8065,15.65
+EXP-A2,"Cap Expansion (Cap 500, Unranked)",3000,500,False,69.1078,381.51,500.0,0.821,3.3
+EXP-A3,"Cap Expansion (Cap 750, Unranked)",3000,750,False,74.1847,527.14,750.0,0.8346,3.41
+EXP-B1,"Posting Limit 5k (Cap 350, Unranked)",5000,350,False,62.3083,288.47,350.0,0.8003,3.84
+EXP-B2,"Posting Limit 10k (Cap 350, Unranked)",10000,350,False,51.4743,316.33,350.0,0.7592,11.18
+EXP-C1,Baseline V2 + Token Pre-Ranking (Cap 350),3000,350,True,76.1595,281.28,350.0,0.8395,3.74
+EXP-C2,Posting Limit 10k + Token Pre-Ranking (Cap 350),10000,350,True,74.9993,316.33,350.0,0.8366,12.35
+EXP-C3,Posting Limit 10k + Token Pre-Ranking (Cap 500),10000,500,True,76.2967,440.64,500.0,0.8398,11.48

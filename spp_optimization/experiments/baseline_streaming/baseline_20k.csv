@@ -1,0 +1,2 @@
+num_queries,true_match_pairs,candidate_blocking_recall,precision,recall,macro_f05,recall_at_1,mrr,predicted_pairs,avg_candidates_per_query,runtime_sec,peak_ram_mb
+20000,68839,0.782042156335798,0.9282611294886612,0.67668037013902,0.8640152540926745,0.83365,0.8412852458212222,50182,282.17555,79.2133219242096,5939.390625

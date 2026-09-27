@@ -1,0 +1,11 @@
+{
+  "status": "COMPLETE",
+  "test_inference_time_sec": 9775.0,
+  "total_execution_time_hours": 2.72,
+  "peak_ram_mb": 6651.91,
+  "disk_free_gb": 9.44,
+  "total_test_s1_entities": 1732544,
+  "submission_validation": "PASS",
+  "output_matching_results": "/Users/swapnil/Documents/ML/arya_output/matching_results.tsv",
+  "model_checkpoint": "/Users/swapnil/Documents/ML/arya_output/arya_model.joblib"
+}

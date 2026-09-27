@@ -1,0 +1,31 @@
+{
+  "pilot_s1_processed": 25000,
+  "candidate_pairs_processed": 7034977,
+  "positive_pairs": 68165,
+  "negative_pairs": 6966812,
+  "feature_count": 16,
+  "feature_generation_time_sec": 316.17,
+  "model_train_time_sec": 8.01,
+  "peak_ram_mb": 1240.61,
+  "disk_free_gb": 2.41,
+  "validation_metrics": {
+    "precision": 0.9165,
+    "recall": 0.8847,
+    "f1": 0.9004,
+    "roc_auc": 0.9986,
+    "pr_auc": 0.9529
+  },
+  "ranking_metrics": {
+    "val_s1_eval_count": 4420,
+    "recall_at_1": 0.9511,
+    "recall_at_3": 0.969,
+    "recall_at_5": 0.9697,
+    "recall_at_10": 0.971,
+    "mrr": 0.9602
+  },
+  "estimated_runtimes": {
+    "full_train_hours": 7.74,
+    "full_test_hours": 6.06
+  },
+  "safety_assessment": "PASS"
+}

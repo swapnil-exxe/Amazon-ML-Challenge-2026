@@ -1,0 +1,84 @@
+ML CHALLENGE 2026 — EXP-C1 IMPLEMENTATION AUDIT REPORT
+Generated at: 2026-09-27T18:25:00+05:30
+Author: Senior ML Engineering Audit
+
+================================================================================
+A. FILES INSPECTED
+================================================================================
+1. /Users/swapnil/Documents/ML/blocking_recall_audit_v2.py
+2. /Users/swapnil/Documents/ML/run_spp_blocking_failure_analysis.py
+3. /Users/swapnil/Documents/ML/run_spp_threshold_grid.py
+4. /Users/swapnil/Documents/ML/arya_output/run_arya_inference_v2.py
+5. /Users/swapnil/Documents/ML/arya_output/spp/run_arya_inference_spp.py
+6. /Users/swapnil/Documents/ML/manthan_output/archive/test_evidence_ranking.py
+7. /Users/swapnil/Documents/ML/manthan_output/phase_3_blocking/candidates/candidate_pairs_train_v2.tsv
+
+================================================================================
+B. ACTUAL PIPELINE IMPLEMENTATION TRACE
+================================================================================
+Raw Query Entities (Source 1)
+  ↓
+Data Cleaning & Standardization
+  (manthan_output/phase_2_cleaning/cleaned/clean_train_source1.tsv, etc.)
+  ↓
+Inverted Token Indexing & High-Frequency Cutoffs
+  (Posting list frequency limit: len(v) <= 3000 for name tokens, <= 1000 for addr/num)
+  ↓
+Candidate Pre-Ranking via Evidence Scoring
+  (Scores name tokens (+3.0), address tokens (+1.5), numbers (+2.0), prefix (+1.0), exact name (+10.0))
+  ↓
+Candidate Truncation Cap (Top 350)
+  (Applied strictly AFTER sorting candidates by descending score with entity ID tie-breaker)
+  ↓
+16 Pairwise Feature Extraction
+  (Name Jaccard, Sig Jaccard, Prefix4, Addr Jaccard, Num Match, Candidate Rank, Candidate Count, etc.)
+  ↓
+arya_model.joblib Classifier Prediction
+  (Loaded via joblib.load('/Users/swapnil/Documents/ML/arya_output/arya_model.joblib'))
+  ↓
+Country-Specific Probability Thresholding
+  (US: p >= 0.60 | India: p >= 0.50 | France/Other: p >= 0.35, fallback p >= 0.30)
+  ↓
+Final Matching Results Output (matching_results_v2.tsv)
+
+================================================================================
+C. CANDIDATE GENERATION & RANKING LOGIC
+================================================================================
+- Candidate retrieval uses inverted indexes over country-isolated tokens.
+- High-frequency cutoff skips posting lists with >3,000 entries to prevent noise.
+- Scored candidates are sorted key=lambda x: (-x[0], x[1]) where x[0] is evidence score and x[1] is entity_id string.
+- Candidate truncation at cap 350 happens AFTER sorting, ensuring high-evidence true matches are retained.
+
+================================================================================
+D. FEATURE GENERATION & MODEL LOADING
+================================================================================
+- Standard V2 pipeline loads arya_model.joblib (16 features).
+- S++ experiment pipeline uses arya_model_spp.joblib (20 features adding Levenshtein, length ratio, token overlap ratio, num overlap bool).
+
+================================================================================
+E. THRESHOLD LOGIC
+================================================================================
+- Country-specific thresholds:
+  * US: p >= 0.60
+  * India: p >= 0.50
+  * France / Default: p >= 0.35 (Fallback: if top prob >= 0.30, select top 1)
+
+================================================================================
+F. DETERMINISM OBSERVATIONS
+================================================================================
+- Ranking sorting uses key `(-score, cid)` which includes candidate entity ID string as a secondary tie-breaker.
+- Candidate ordering after pre-ranking is 100% deterministic.
+- Note: Streaming pre-generated candidate TSV (`candidate_pairs_train_v2.tsv`) relies on static order saved to disk, whereas dynamic index lookup requires fixed dictionary key sorting to avoid Python hash seed variation across processes.
+
+================================================================================
+G. DISCREPANCIES BETWEEN DOCUMENTED AUDIT AND ACTUAL CODE
+================================================================================
+1. IDF Formula vs Evidence Weighting: Written audit referenced an IDF token formula S_tok = sum 1 / log(1 + df_t), whereas test_evidence_ranking.py implements explicit evidence weights (+3.0 name, +1.5 addr, +2.0 num, +10.0 exact name).
+2. Offline Pre-Ranking vs Pre-Generated Candidate File: candidate_pairs_train_v2.tsv contains unranked top-350 candidates. True EXP-C1 pre-ranking requires querying cleaned entity feature files directly.
+3. Feature Counts: V2 baseline classifier expects 16 features, whereas S++ challenger expects 20 features.
+
+================================================================================
+H. REPRODUCIBILITY & ARTIFACT SAFETY
+================================================================================
+- EXP-C1 can be fully reproduced in isolated storage under /Users/swapnil/Documents/ML/spp_optimization/experiments/.
+- All five protected production artifacts remain 100% untouched and hash-verified.

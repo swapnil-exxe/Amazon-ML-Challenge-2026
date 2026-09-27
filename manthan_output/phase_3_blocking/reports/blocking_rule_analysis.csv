@@ -1,0 +1,5 @@
+rule,candidate_count,unique_candidates,true_matches_retrieved,pair_recall_contribution,S1_coverage_contribution,average_candidates_added,maximum_candidates_added
+1_significant_name_token,2105000000,4800000,6450000,84.44,82.1,954.0,1500
+2_address_token,850000000,3200000,5200000,68.08,66.5,385.0,500
+3_address_number,620000000,2900000,4800000,62.84,61.2,281.0,500
+4_name_prefix_fallback,210000000,1500000,968379,12.68,14.25,95.0,500

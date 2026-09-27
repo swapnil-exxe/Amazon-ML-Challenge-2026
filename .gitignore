@@ -1,0 +1,62 @@
+# =============================================
+# Amazon ML Challenge 2026 — .gitignore
+# =============================================
+
+# ---- Large dataset files (competition data) ----
+student_resource/dataset/
+student_resource/dataset/*.tsv
+student_resource/dataset/*.csv
+
+# ---- Cleaned source TSVs (400MB–1.5GB each) ----
+manthan_output/phase_2_cleaning/cleaned/*.tsv
+
+# ---- Candidate pair files (4–8GB each) ----
+manthan_output/phase_3_blocking/candidates/*.tsv
+
+# ---- Submission ZIPs (2GB each) ----
+team_submission.zip
+team_submission_v2.zip
+FINAL_SUBMISSION/team_submission_v2.zip
+FINAL_SUBMISSION/
+
+# ---- Matching result TSVs (70–76MB each) ----
+arya_output/matching_results.tsv
+arya_output/matching_results_v2.tsv
+spp_optimization/experiments/outputs/matching_results.tsv
+spp_optimization/experiments/dev_ground_truth.tsv
+
+# ---- Python cache ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# ---- Virtual environments ----
+venv/
+env/
+.venv/
+.env/
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+*.ipynb
+
+# ---- macOS ----
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ---- IDE ----
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---- Logs ----
+*.log
+
+# ---- Build artifacts ----
+dist/
+build/
+*.egg-info/

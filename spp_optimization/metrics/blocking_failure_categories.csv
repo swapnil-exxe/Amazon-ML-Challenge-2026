@@ -1,0 +1,4 @@
+category,missed_count,percentage_of_missed,percentage_of_total_gt
+Candidate Cap Truncation (Cap >= 350),939539,56.21,12.3
+Zero Candidate Generation (0 Candidates),527343,31.55,6.9
+Sparse Token / Index Truncation (< 350 Cands),204511,12.24,2.68

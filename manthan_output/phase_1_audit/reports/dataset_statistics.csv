@@ -1,0 +1,8 @@
+dataset,path,size_mb,row_count,column_count,columns
+train_source1,/Users/swapnil/Documents/ML/student_resource/dataset/train/train_source1.tsv,200.34,2206821,4,"entity_id, business_name, business_address, country"
+train_source2,/Users/swapnil/Documents/ML/student_resource/dataset/train/train_source2.tsv,466.63,5034616,4,"entity_id, business_name, business_address, country"
+train_source3,/Users/swapnil/Documents/ML/student_resource/dataset/train/train_source3.tsv,480.37,5285603,4,"entity_id, business_name, business_address, country"
+train_ground_truth,/Users/swapnil/Documents/ML/student_resource/dataset/train/train_ground_truth.tsv,121.13,2206821,2,"source1_entity_id, matched_entity_ids"
+test_source1,/Users/swapnil/Documents/ML/student_resource/dataset/test/test_source1.tsv,166.91,1732544,4,"entity_id, business_name, business_address, country"
+test_source2,/Users/swapnil/Documents/ML/student_resource/dataset/test/test_source2.tsv,485.86,4887273,4,"entity_id, business_name, business_address, country"
+test_source3,/Users/swapnil/Documents/ML/student_resource/dataset/test/test_source3.tsv,482.56,5082316,4,"entity_id, business_name, business_address, country"

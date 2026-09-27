@@ -1,0 +1,36 @@
+{
+  "experiment_id": "exp_001",
+  "hypothesis": "Baseline verification using static disk candidate streaming.",
+  "candidate_strategy": "static_disk",
+  "candidate_cap": 350,
+  "posting_cap": 3000,
+  "thresholds": {
+    "US": 0.6,
+    "India": 0.5,
+    "Other": 0.35,
+    "Fallback": 0.3
+  },
+  "queries_evaluated": 20000,
+  "metrics": {
+    "candidate_blocking_recall": 0.782042156335798,
+    "precision": 0.9282611294886612,
+    "recall": 0.67668037013902,
+    "macro_f05": 0.8640152540926745,
+    "recall_at_1": 0.83365,
+    "recall_at_5": 0.8496,
+    "recall_at_10": 0.85,
+    "mrr": 0.8412852458212222,
+    "avg_candidates_per_query": 282.17555,
+    "runtime_sec": 225.6291389465332,
+    "peak_ram_mb": 5159.046875
+  },
+  "deltas_vs_baseline": {
+    "delta_macro_f05": 1.5254092674554798e-05,
+    "delta_cand_recall": 4.215633579796041e-05,
+    "delta_precision": -3.8870511338773284e-05,
+    "delta_recall": -1.9629860979919478e-05,
+    "delta_recall_at_1": 4.999999999999449e-05,
+    "delta_mrr": -1.4754178777831584e-05
+  },
+  "retained": true
+}

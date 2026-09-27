@@ -1,0 +1,7 @@
+file,original_rows,cleaned_rows,row_count_match,id_exact_match,orig_missing_addrs,clean_missing_addrs,missing_addr_match,orig_countries,clean_countries
+train_source1,2206821,2206821,True,True,0,0,True,"India, US","India, US"
+train_source2,5034616,5034616,True,True,168967,168967,True,"India, US","India, US"
+train_source3,5285603,5285603,True,True,175916,175916,True,"India, US","India, US"
+test_source1,1732544,1732544,True,True,0,0,True,"France, India, US","France, India, US"
+test_source2,4887273,4887273,True,True,129408,129408,True,"France, India, US","France, India, US"
+test_source3,5082316,5082316,True,True,136098,136098,True,"France, India, US","France, India, US"

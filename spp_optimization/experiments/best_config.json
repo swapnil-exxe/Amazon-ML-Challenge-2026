@@ -1,0 +1,25 @@
+{
+  "experiment_id": "EMERGENCY_C1_THRESHOLD_OPT",
+  "optimal_thresholds": {
+    "US": 0.6,
+    "India": 0.5,
+    "France_Other": 0.2
+  },
+  "metrics": {
+    "candidate_blocking_recall": 0.8052702683072096,
+    "precision": 0.9305988771054273,
+    "recall": 0.6934441232440913,
+    "macro_f05": 0.8710217755443888,
+    "recall_at_1": 0.85385,
+    "recall_at_5": 0.87085,
+    "mrr": 0.8620181493482508,
+    "avg_candidates_per_query": 302.0177,
+    "runtime_sec": 1557.9354600906372,
+    "peak_ram_mb": 1747.703125
+  },
+  "target_status": {
+    "primary_0_992000": "FAIL",
+    "stretch_0_992500": "FAIL",
+    "aggressive_0_993000": "FAIL"
+  }
+}

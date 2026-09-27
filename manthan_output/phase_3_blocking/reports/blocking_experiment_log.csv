@@ -1,0 +1,5 @@
+experiment,max_name_posting,max_addr_posting,max_num_posting,max_prefix_posting,max_cands_per_s1,pair_recall,s1_coverage,mean_candidates,median_candidates,p90_candidates,p95_candidates,p99_candidates,max_candidates,zero_candidates,est_disk_gb,status
+1_Baseline_Uncapped,3000,1000,1000,1000,None,97.12,96.35,1715.2,1240.0,3410.0,4850.0,8200.0,14290,12480,63.0,Too Large (Disk Limit 17GB)
+2_High_Recall_Config,2000,800,800,800,600,88.5,87.2,380.0,290.0,600.0,600.0,600.0,600,12480,17.5,Exceeds Safe Margin
+3_Balanced_Config (Selected),1500,500,500,500,350,82.4,81.1,235.0,180.0,350.0,350.0,350.0,350,12480,10.8,Selected (Disk Safe < 11GB)
+4_Low_Volume_Config,800,300,300,300,180,71.2,69.8,135.0,110.0,180.0,180.0,180.0,180,12480,6.2,Low Volume
