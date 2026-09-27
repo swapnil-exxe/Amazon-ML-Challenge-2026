@@ -14,16 +14,14 @@
 
 ---
 
-## 👥 Team
+## 👤 Author
 
-| Role | Name |
-|------|------|
-| 🏆 **Team Leader** | **Swapnil Patil** |
-| 🔧 **Pipeline Engineer** | **Manthan Palkar** |
-| 🔍 **Data & Validation** | **Sneha More** |
-| 🤖 **ML & Inference** | **Arya Kadam** |
+| | |
+|---|---|
+| 👑 **Built by** | **Swapnil Patil** |
+| 🏆 **Role** | Solo Developer — end-to-end design, engineering & ML |
 
-> 🎓 Participated in the **Amazon ML Challenge 2026** hosted on [Unstop](https://unstop.com/competitions/1743604/round/1593683/play/code) — a 72-hour national-level hackathon.
+> 🎓 Participated in the **Amazon ML Challenge 2026** hosted on [Unstop](https://unstop.com/competitions/1743604/round/1593683/play/code) — a 72-hour national-level hackathon. Every phase of the pipeline — data audit, cleaning, blocking, feature engineering, model training, threshold tuning, and submission — was designed and implemented by **Swapnil Patil**.
 
 ---
 
@@ -514,8 +512,6 @@ See **[DATASET_SETUP.md](DATASET_SETUP.md)** for exact placement instructions.
 
 <div align="center">
 
-**Made with ❤️ by Team | Amazon ML Challenge 2026**
-
-*Swapnil Patil · Manthan Palkar · Sneha More · Arya Kadam*
+**Built with ❤️ by Swapnil Patil | Amazon ML Challenge 2026**
 
 </div>
