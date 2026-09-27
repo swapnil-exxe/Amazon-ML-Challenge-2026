@@ -17,6 +17,7 @@
 
 | | |
 |---|---|
+| 🛡️ **Team Name** | **Cloud Coders** |
 | 👑 **Author & Lead Developer** | **Swapnil Patil** |
 | 🏆 **Role** | Solo Developer — end-to-end design, data auditing, blocking architecture, ML modeling & submission pipeline |
 | 👥 **Team Members** | **Swapnil Patil** · **Manthan Palkar** · **Sneha More** · **Arya Kadam** |
@@ -239,9 +240,10 @@ Amazon-ML-Challenge-2026/
 
 ## 📦 Dataset Acquisition & Setup
 
-Competition dataset files are governed by Amazon/Unstop competition rules and can be downloaded from the portal:
+Competition dataset files can be downloaded directly using the official competition distribution link:
 
-🔗 **[Amazon ML Challenge Portal — Dataset Download](https://unstop.com/competitions/1743604/round/1593683/play/code)**
+- 📥 **Direct Dataset ZIP**: [Download `student_resource.zip`](https://fg7syt3j.r.ap-south-1.awstrack.me/L0/https:%2F%2Fcdn.unstop.com%2Ffiles%2F6ab10eb3b23ba_student_resource.zip/1/010901a0d7d69abe-079e8d22-f485-4612-aecc-86c9a1c219de-000000/RPy-2xxSrBpSaCoRx0_Avk6aDyg=258)
+- 🔗 **Competition Portal**: [Amazon ML Challenge Portal — Unstop](https://unstop.com/competitions/1743604/round/1593683/play/code)
 
 ### Placement Directory Layout
 Extract raw TSVs into `student_resource/dataset/`:
@@ -328,7 +330,7 @@ python student_resource/utils/validate_submission.py \
 
 <div align="center">
 
-**Built with ❤️ by Swapnil Patil**  
+**Built with ❤️ by Swapnil Patil · Team Cloud Coders**  
 *Team Members: Swapnil Patil · Manthan Palkar · Sneha More · Arya Kadam*  
 *Amazon ML Challenge 2026 — Business Entity Resolution*
 

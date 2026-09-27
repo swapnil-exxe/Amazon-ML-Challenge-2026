@@ -4,11 +4,9 @@ Raw competition data files are **not included** in this repository due to size (
 
 ## Source
 
-Download from the [Unstop competition portal](https://unstop.com/competitions/1743604/round/1593683/play/code):
-
-- `student_resource/dataset/train.tsv` (~486 MB)
-- `student_resource/dataset/test.tsv` (~121 MB)
-- `student_resource/dataset/val.tsv`
+Download directly via the official competition CDN distribution link:
+- 📥 **Direct Link**: [Download `student_resource.zip`](https://fg7syt3j.r.ap-south-1.awstrack.me/L0/https:%2F%2Fcdn.unstop.com%2Ffiles%2F6ab10eb3b23ba_student_resource.zip/1/010901a0d7d69abe-079e8d22-f485-4612-aecc-86c9a1c219de-000000/RPy-2xxSrBpSaCoRx0_Avk6aDyg=258)
+- 🔗 **Competition Portal**: [Unstop — Amazon ML Challenge 2026](https://unstop.com/competitions/1743604/round/1593683/play/code)
 
 ## Placement
 
