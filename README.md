@@ -23,6 +23,8 @@
 
 > 🎓 Participated in the **Amazon ML Challenge 2026** hosted on [Unstop](https://unstop.com/competitions/1743604/round/1593683/play/code) — a 72-hour national-level hackathon. Every phase of the pipeline — data audit, cleaning, blocking, feature engineering, model training, threshold tuning, and submission — was designed and implemented by **Swapnil Patil**.
 
+**Team Members:** Swapnil Patil · Manthan Palkar · Sneha More · Arya Kadam
+
 ---
 
 ## 🏆 Results
