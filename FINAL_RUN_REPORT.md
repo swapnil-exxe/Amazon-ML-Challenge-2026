@@ -50,7 +50,7 @@ This report summarizes the time-boxed, evidence-gated diagnostic audit conducted
 
 **RECOMMENDATION**: **Submit the original (already done) as final — no changes justified/safe today.**
 
-- **Primary Submission File**: `/Users/swapnil/Documents/ML/arya_output/matching_results.tsv`
+- **Primary Submission File**: `/Users/swapnil/Documents/ML/go2_output/matching_results.tsv`
 - **Final Package Archive**: `/Users/swapnil/Documents/ML/team_submission.zip`
 - **Official Validator Status**: **PASS — no blocking issues found. Safe to submit.**
 - **Deadline Buffer**: ~12 hours remaining before 11:59 PM IST.

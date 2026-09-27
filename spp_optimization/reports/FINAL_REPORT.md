@@ -19,10 +19,10 @@ This document provides an evidence-based, empirical audit and optimization recor
 | File Path | Role | Data Rows | SHA256 Hash | Status |
 | :--- | :--- | :---: | :--- | :---: |
 | `/Users/swapnil/Documents/ML/team_submission_v2.zip` | V2 Submission Package | 1,732,544 | `d6926b559404028a9fdd2aca167438f0cead828fb4991ede0474ee7f8ad46d7c` | **LOCKED** |
-| `/Users/swapnil/Documents/ML/arya_output/matching_results_v2.tsv` | V2 Output TSV | 1,732,544 | `56d88eb1f3b7f1e6dd23b3b626266b9cfb9b59a9257f9e9feedc6a6fc7a72d73` | **LOCKED** |
+| `/Users/swapnil/Documents/ML/go2_output/matching_results_v2.tsv` | V2 Output TSV | 1,732,544 | `56d88eb1f3b7f1e6dd23b3b626266b9cfb9b59a9257f9e9feedc6a6fc7a72d73` | **LOCKED** |
 | `/Users/swapnil/Documents/ML/team_submission.zip` | Baseline Package | 1,732,544 | `459e67da33e82ea6b052de382cbdf0805c6cbb09a5ca2138415fa6a7cd043747` | **LOCKED** |
-| `/Users/swapnil/Documents/ML/arya_output/matching_results.tsv` | Baseline Output TSV | 1,732,544 | `d1c898796e2ab192b627f8d0e8ea83f96e1427b029a8d66ed9165c87bd94d1e8` | **LOCKED** |
-| `/Users/swapnil/Documents/ML/arya_output/arya_model.joblib` | Production Model | N/A | `476763ebe4051718167703dbf28e88a85ef80e2982876ccdb028508793534cad` | **LOCKED** |
+| `/Users/swapnil/Documents/ML/go2_output/matching_results.tsv` | Baseline Output TSV | 1,732,544 | `d1c898796e2ab192b627f8d0e8ea83f96e1427b029a8d66ed9165c87bd94d1e8` | **LOCKED** |
+| `/Users/swapnil/Documents/ML/go2_output/go2_model.joblib` | Production Model | N/A | `476763ebe4051718167703dbf28e88a85ef80e2982876ccdb028508793534cad` | **LOCKED** |
 
 ---
 
@@ -123,8 +123,8 @@ PASS — no blocking issues found. Safe to submit.
 - `Documentation_template.md`
 - `code/business_entity_resolution/README.md`
 - `code/business_entity_resolution/requirements.txt`
-- `code/business_entity_resolution/src/arya_model.joblib`
-- `code/business_entity_resolution/src/run_arya_inference_v2.py`
+- `code/business_entity_resolution/src/go2_model.joblib`
+- `code/business_entity_resolution/src/run_go2_inference_v2.py`
 - `output/candidate_pairs.tsv`
 - `output/matching_results.tsv`
 

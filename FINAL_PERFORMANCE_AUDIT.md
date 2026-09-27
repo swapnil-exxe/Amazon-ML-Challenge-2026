@@ -6,7 +6,7 @@ This document records the empirical performance validation audit of the complete
 ---
 
 ## A. Existing Model Verification
-- **Model Checkpoint Path**: `/Users/swapnil/Documents/ML/arya_output/arya_model.joblib`
+- **Model Checkpoint Path**: `/Users/swapnil/Documents/ML/go2_output/go2_model.joblib`
 - **Model Class**: `sklearn.ensemble.HistGradientBoostingClassifier`
 - **Expected Feature Dimension**: **16 Features**
 - **Model File SHA256**: `476763ebe4051718167703dbf28e88a85ef80e2982876ccdb028508793534cad`
@@ -54,7 +54,7 @@ Evaluated on a held-out split of **2,000 S1 entities** (560,831 candidate pairs)
 ---
 
 ## C. Test Prediction Distribution Analysis
-Evaluated across all **1,732,544 test S1 entities** in `/Users/swapnil/Documents/ML/arya_output/matching_results.tsv`.
+Evaluated across all **1,732,544 test S1 entities** in `/Users/swapnil/Documents/ML/go2_output/matching_results.tsv`.
 
 - **Total Test S1 Entities**: 1,732,544
 - **Non-Empty Predictions**: 1,329,155 (**76.72%**)
@@ -84,7 +84,7 @@ Evaluated across all **1,732,544 test S1 entities** in `/Users/swapnil/Documents
 Execution of official validator:
 ```bash
 python3 /Users/swapnil/Documents/ML/student_resource/utils/validate_submission.py \
-  --matching /Users/swapnil/Documents/ML/arya_output/matching_results.tsv \
+  --matching /Users/swapnil/Documents/ML/go2_output/matching_results.tsv \
   --test-dir /Users/swapnil/Documents/ML/student_resource/dataset/test
 ```
 **Result**: `PASS — no blocking issues found. Safe to submit.`
@@ -101,8 +101,8 @@ python3 /Users/swapnil/Documents/ML/student_resource/utils/validate_submission.p
 
 ## G. Production Artifact Integrity
 All production artifacts were verified unchanged via SHA256 checksums:
-- `arya_output/arya_model.joblib`: `476763ebe4051718167703dbf28e88a85ef80e2982876ccdb028508793534cad` (Unchanged)
-- `arya_output/matching_results.tsv`: `d1c898796e2ab192b627f8d0e8ea83f96e1427b029a8d66ed9165c87bd94d1e8` (Unchanged)
+- `go2_output/go2_model.joblib`: `476763ebe4051718167703dbf28e88a85ef80e2982876ccdb028508793534cad` (Unchanged)
+- `go2_output/matching_results.tsv`: `d1c898796e2ab192b627f8d0e8ea83f96e1427b029a8d66ed9165c87bd94d1e8` (Unchanged)
 - `team_submission.zip`: Verified intact.
 
 ---

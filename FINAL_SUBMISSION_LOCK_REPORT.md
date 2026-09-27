@@ -1,6 +1,6 @@
 # FINAL SUBMISSION LOCK & LAST SAFETY AUDIT REPORT — ML CHALLENGE 2026
 
-**Project**: Business Entity Resolution (Manthan + ARYA Technical Pipeline)  
+**Project**: Business Entity Resolution (Go1 + GO2 Technical Pipeline)  
 **Date**: 27 September 2026  
 **Deadline**: Today, 11:59 PM IST  
 **Pipeline Status**: **FROZEN & LOCKED (100% Verified)**  
@@ -10,7 +10,7 @@
 ### 1. Baseline SHA256 Verification (Locked Safety Baseline)
 - `matching_results.tsv`: `d1c898796e2ab192b627f8d0e8ea83f96e1427b029a8d66ed9165c87bd94d1e8` (**VERIFIED MATCH**)
 - `team_submission.zip`: `459e67da33e82ea6b052de382cbdf0805c6cbb09a5ca2138415fa6a7cd043747` (**VERIFIED MATCH**)
-- `arya_model.joblib`: `476763ebe4051718167703dbf28e88a85ef80e2982876ccdb028508793534cad` (**VERIFIED MATCH**)
+- `go2_model.joblib`: `476763ebe4051718167703dbf28e88a85ef80e2982876ccdb028508793534cad` (**VERIFIED MATCH**)
 - **Baseline Production Artifact Status**: **UNTOUCHED & MODIFIED: NO**
 
 ---

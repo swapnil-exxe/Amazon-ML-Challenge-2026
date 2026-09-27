@@ -24,9 +24,9 @@ from collections import defaultdict
 EXPECTED_HASHES = {
     '/Users/swapnil/Documents/ML/team_submission.zip': '459e67da33e82ea6b052de382cbdf0805c6cbb09a5ca2138415fa6a7cd043747',
     '/Users/swapnil/Documents/ML/team_submission_v2.zip': 'd6926b559404028a9fdd2aca167438f0cead828fb4991ede0474ee7f8ad46d7c',
-    '/Users/swapnil/Documents/ML/arya_output/matching_results.tsv': 'd1c898796e2ab192b627f8d0e8ea83f96e1427b029a8d66ed9165c87bd94d1e8',
-    '/Users/swapnil/Documents/ML/arya_output/matching_results_v2.tsv': '56d88eb1f3b7f1e6dd23b3b626266b9cfb9b59a9257f9e9feedc6a6fc7a72d73',
-    '/Users/swapnil/Documents/ML/arya_output/arya_model.joblib': '476763ebe4051718167703dbf28e88a85ef80e2982876ccdb028508793534cad'
+    '/Users/swapnil/Documents/ML/go2_output/matching_results.tsv': 'd1c898796e2ab192b627f8d0e8ea83f96e1427b029a8d66ed9165c87bd94d1e8',
+    '/Users/swapnil/Documents/ML/go2_output/matching_results_v2.tsv': '56d88eb1f3b7f1e6dd23b3b626266b9cfb9b59a9257f9e9feedc6a6fc7a72d73',
+    '/Users/swapnil/Documents/ML/go2_output/go2_model.joblib': '476763ebe4051718167703dbf28e88a85ef80e2982876ccdb028508793534cad'
 }
 
 BASE_DIR = '/Users/swapnil/Documents/ML'
@@ -35,10 +35,10 @@ SUBMISSION_DIR = os.path.join(EXP_DIR, 'final_submission_package')
 os.makedirs(SUBMISSION_DIR, exist_ok=True)
 
 VAL_GT_PATH = os.path.join(EXP_DIR, 'val_ground_truth.tsv')
-CLEAN_DIR = os.path.join(BASE_DIR, 'manthan_output/phase_2_cleaning/cleaned')
-MODEL_PATH = os.path.join(BASE_DIR, 'arya_output/arya_model.joblib')
+CLEAN_DIR = os.path.join(BASE_DIR, 'go1_output/phase_2_cleaning/cleaned')
+MODEL_PATH = os.path.join(BASE_DIR, 'go2_output/go2_model.joblib')
 
-TEST_CAND_PATH = os.path.join(BASE_DIR, 'manthan_output/phase_3_blocking/candidates/candidate_pairs_test_v2.tsv')
+TEST_CAND_PATH = os.path.join(BASE_DIR, 'go1_output/phase_3_blocking/candidates/candidate_pairs_test_v2.tsv')
 TEST_S1_PATH = os.path.join(CLEAN_DIR, 'clean_test_source1.tsv')
 TEST_S2_PATH = os.path.join(CLEAN_DIR, 'clean_test_source2.tsv')
 TEST_S3_PATH = os.path.join(CLEAN_DIR, 'clean_test_source3.tsv')
@@ -353,7 +353,7 @@ def main():
     
     # We load v2 matching results as reference or generate clean matching results
     # Copy/format matching results for submission
-    with open(os.path.join(BASE_DIR, 'arya_output/matching_results_v2.tsv'), 'r', encoding='utf-8') as fin:
+    with open(os.path.join(BASE_DIR, 'go2_output/matching_results_v2.tsv'), 'r', encoding='utf-8') as fin:
         with open(final_matching_tsv, 'w', encoding='utf-8') as fout:
             for line in fin:
                 fout.write(line)
@@ -367,7 +367,7 @@ def main():
     print(f"Final Matching TSV Total Lines: {lines_cnt:,} | Data Rows: {data_rows:,}")
 
     print(f"\nCreating final submission package: {final_zip_path}...")
-    cand_test_src = os.path.join(BASE_DIR, 'manthan_output/phase_3_blocking/candidates/candidate_pairs_test_v2.tsv')
+    cand_test_src = os.path.join(BASE_DIR, 'go1_output/phase_3_blocking/candidates/candidate_pairs_test_v2.tsv')
     
     with zipfile.ZipFile(final_zip_path, 'w', zipfile.ZIP_DEFLATED) as zf:
         zf.write(cand_test_src, arcname='output/candidate_pairs.tsv')

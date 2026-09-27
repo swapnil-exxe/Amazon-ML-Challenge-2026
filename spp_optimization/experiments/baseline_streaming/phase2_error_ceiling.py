@@ -63,9 +63,9 @@ def parse_entity_features_from_tuple(tup):
 def main():
     exp_dir = '/Users/swapnil/Documents/ML/spp_optimization/experiments'
     val_gt_path = os.path.join(exp_dir, 'val_ground_truth.tsv')
-    clean_dir = '/Users/swapnil/Documents/ML/manthan_output/phase_2_cleaning/cleaned'
-    cand_train_path = '/Users/swapnil/Documents/ML/manthan_output/phase_3_blocking/candidates/candidate_pairs_train_v2.tsv'
-    model_path = '/Users/swapnil/Documents/ML/arya_output/arya_model.joblib'
+    clean_dir = '/Users/swapnil/Documents/ML/go1_output/phase_2_cleaning/cleaned'
+    cand_train_path = '/Users/swapnil/Documents/ML/go1_output/phase_3_blocking/candidates/candidate_pairs_train_v2.tsv'
+    model_path = '/Users/swapnil/Documents/ML/go2_output/go2_model.joblib'
 
     num_queries = 20000
     print(f"=== PHASE 2: ERROR CEILING ANALYSIS ({num_queries:,} QUERIES) ===")

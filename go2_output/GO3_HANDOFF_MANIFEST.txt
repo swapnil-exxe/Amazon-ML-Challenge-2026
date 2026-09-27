@@ -1,0 +1,34 @@
+==================================================
+  ML CHALLENGE 2026 — GO3 HANDOFF MANIFEST
+==================================================
+Project Name: ML Challenge 2026 — Entity Resolution
+Pipeline Stage: Go1 (Phases 1-3) + GO2 (Phase 4)
+Final Status: COMPLETE & READY FOR HANDOFF
+Official Validator: PASS — Safe to Submit
+
+PRIMARY GO2 ARTIFACTS:
+1. Leaderboard Matching Results TSV (Primary Submission Output):
+   /Users/swapnil/Documents/ML/go2_output/matching_results.tsv
+
+2. Trained ML Model Checkpoint (16 Features):
+   /Users/swapnil/Documents/ML/go2_output/go2_model.joblib
+
+3. Streaming Batch Inference Code:
+   /Users/swapnil/Documents/ML/go2_output/run_go2_inference_only.py
+
+4. Comprehensive Phase 4 Completion Report:
+   /Users/swapnil/Documents/ML/GO2_FINAL_REPORT.md
+
+5. Go3 Handoff Guide:
+   /Users/swapnil/Documents/ML/go2_output/GO2_GO3_HANDOFF.md
+
+6. Metrics Summary JSON:
+   /Users/swapnil/Documents/ML/go2_output/go2_final_summary.json
+
+CRITICAL OPERATIONAL INSTRUCTIONS FOR GO3:
+- DO NOT RERUN GO2 INFERENCE.
+- DO NOT RETRAIN THE ML MODEL.
+- DO NOT MODIFY matching_results.tsv.
+- DO NOT REGENERATE LARGE GO1 PHASE 2/3 FILES.
+- Upload matching_results.tsv to the portal for leaderboard scoring.
+==================================================

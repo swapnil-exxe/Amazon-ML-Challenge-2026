@@ -26,21 +26,21 @@ Source1 (query catalog)
 Phase 1: Data Audit & SHA256 Verification
         │
         ▼
-Phase 2: Cleaning (manthan_output/phase_2_cleaning/)
+Phase 2: Cleaning (go1_output/phase_2_cleaning/)
   - Legal suffix normalization
   - Name / address standardization
   - Country inference
         │
         ▼
-Phase 3: Blocking (manthan_output/phase_3_blocking/)
+Phase 3: Blocking (go1_output/phase_3_blocking/)
   - Country-isolated inverted index
   - Evidence pre-ranking (name +3.0, addr +1.5, num +2.0, exact +10.0)
   - Top-350 candidates per query
         │
         ▼
-Phase 4: Inference (arya_output/)
+Phase 4: Inference (go2_output/)
   - 16 pairwise LightGBM features
-  - arya_model.joblib (LightGBM classifier)
+  - go2_model.joblib (LightGBM classifier)
   - Country-specific thresholds:
       US ≥ 0.60 | India ≥ 0.50 | Other ≥ 0.35 (fallback 0.30)
   - Exact-name override
@@ -78,12 +78,12 @@ matching_results.tsv  ← Unstop submission
 
 ```
 ML/
-├── arya_output/              # Phase 4: Inference engine
-│   ├── run_arya_inference_v2.py   # Production V2 pipeline
-│   ├── arya_model.joblib          # Trained LightGBM model (0.23 MB)
+├── go2_output/              # Phase 4: Inference engine
+│   ├── run_go2_inference_v2.py   # Production V2 pipeline
+│   ├── go2_model.joblib          # Trained LightGBM model (0.23 MB)
 │   └── spp/                       # S++ 20-feature variant (experimental)
 │
-├── manthan_output/           # Phases 2–3 outputs
+├── go1_output/           # Phases 2–3 outputs
 │   ├── phase_2_cleaning/     # Cleaning scripts & configs
 │   └── phase_3_blocking/     # Blocking scripts & configs
 │       └── candidates/       # ⚠️ Large TSVs excluded from git
@@ -124,13 +124,13 @@ See [DATASET_SETUP.md](DATASET_SETUP.md) — raw data files must be downloaded f
 
 ```bash
 # Phase 2: Cleaning
-python manthan_output/phase_2_cleaning/run_cleaning.py
+python go1_output/phase_2_cleaning/run_cleaning.py
 
 # Phase 3: Blocking
-python manthan_output/phase_3_blocking/run_blocking.py
+python go1_output/phase_3_blocking/run_blocking.py
 
 # Phase 4: Inference (V2)
-python arya_output/run_arya_inference_v2.py
+python go2_output/run_go2_inference_v2.py
 ```
 
 ---
@@ -139,7 +139,7 @@ python arya_output/run_arya_inference_v2.py
 
 | Artifact | SHA256 |
 |----------|--------|
-| `arya_model.joblib` | `476763eb...793534cad` |
+| `go2_model.joblib` | `476763eb...793534cad` |
 | `matching_results_v2.tsv` | `56d88eb1...c7a72d73` |
 | `team_submission_v2.zip` | `d6926b55...d7d7c` |
 

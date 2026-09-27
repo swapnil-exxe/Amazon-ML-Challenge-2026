@@ -1,6 +1,6 @@
 # FINAL SUBMISSION RECORD — ML CHALLENGE 2026
 
-**Project**: Business Entity Resolution (Manthan + ARYA Technical Pipeline)  
+**Project**: Business Entity Resolution (Go1 + GO2 Technical Pipeline)  
 **Date**: September 27, 2026  
 **Pipeline Status**: **FROZEN & LOCKED (Project Closeout Complete)**  
 
@@ -9,16 +9,16 @@
 ### 1. Final Submission State
 
 #### Primary Baseline (Locked Portal Submission)
-- **Prediction File**: `/Users/swapnil/Documents/ML/arya_output/matching_results.tsv` (`d1c898796e2ab192b627f8d0e8ea83f96e1427b029a8d66ed9165c87bd94d1e8`)
+- **Prediction File**: `/Users/swapnil/Documents/ML/go2_output/matching_results.tsv` (`d1c898796e2ab192b627f8d0e8ea83f96e1427b029a8d66ed9165c87bd94d1e8`)
 - **Submission ZIP**: `/Users/swapnil/Documents/ML/team_submission.zip` (`459e67da33e82ea6b052de382cbdf0805c6cbb09a5ca2138415fa6a7cd043747`)
-- **Model Checkpoint**: `/Users/swapnil/Documents/ML/arya_output/arya_model.joblib` (`476763ebe4051718167703dbf28e88a85ef80e2982876ccdb028508793534cad`)
+- **Model Checkpoint**: `/Users/swapnil/Documents/ML/go2_output/go2_model.joblib` (`476763ebe4051718167703dbf28e88a85ef80e2982876ccdb028508793534cad`)
 - **Integrity Status**: **BASELINE INTEGRITY: VERIFIED** (Original baseline remains 100% untouched).
 
 #### V2 Entry (Country-Specific Thresholds — Additional Submission)
-- **Prediction File**: `/Users/swapnil/Documents/ML/arya_output/matching_results_v2.tsv` (`56d88eb1f3b7f1e6dd23b3b626266b9cfb9b59a9257f9e9feedc6a6fc7a72d73`)
+- **Prediction File**: `/Users/swapnil/Documents/ML/go2_output/matching_results_v2.tsv` (`56d88eb1f3b7f1e6dd23b3b626266b9cfb9b59a9257f9e9feedc6a6fc7a72d73`)
 - **Submission ZIP**: `/Users/swapnil/Documents/ML/team_submission_v2.zip` (`d6926b559404028a9fdd2aca167438f0cead828fb4991ede0474ee7f8ad46d7c`)
-- **Source Script in ZIP**: `code/business_entity_resolution/src/run_arya_inference_v2.py` (**VERIFIED PRESENT**)
-- **Model Checkpoint in ZIP**: `code/business_entity_resolution/src/arya_model.joblib` (**VERIFIED PRESENT**)
+- **Source Script in ZIP**: `code/business_entity_resolution/src/run_go2_inference_v2.py` (**VERIFIED PRESENT**)
+- **Model Checkpoint in ZIP**: `code/business_entity_resolution/src/go2_model.joblib` (**VERIFIED PRESENT**)
 - **Official Validator Output**: `PASS — no blocking issues found. Safe to submit.`
 - **ZIP Byte-Integrity**: `PASS` (Internal `output/matching_results.tsv` verified 100% byte-identical to standalone V2 file).
 - **Line Count**: Exactly `1,732,545` lines (1 header + 1,732,544 test entity rows).
@@ -78,7 +78,7 @@
 - **Baseline SHA256 Checksum Verification**:
   - `matching_results.tsv`: `d1c898796e2ab192b627f8d0e8ea83f96e1427b029a8d66ed9165c87bd94d1e8` — **MATCH**
   - `team_submission.zip`: `459e67da33e82ea6b052de382cbdf0805c6cbb09a5ca2138415fa6a7cd043747` — **MATCH**
-  - `arya_model.joblib`: `476763ebe4051718167703dbf28e88a85ef80e2982876ccdb028508793534cad` — **MATCH**
+  - `go2_model.joblib`: `476763ebe4051718167703dbf28e88a85ef80e2982876ccdb028508793534cad` — **MATCH**
   - **Status**: **BASELINE INTEGRITY: VERIFIED**
 
 ---

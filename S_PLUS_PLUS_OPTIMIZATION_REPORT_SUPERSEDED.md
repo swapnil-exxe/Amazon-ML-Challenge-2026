@@ -7,7 +7,7 @@
 
 # S++ OPTIMIZATION REPORT (HISTORICAL EXPERIMENTAL ARCHIVE)
 
-**Project**: Business Entity Resolution (Manthan + ARYA Pipeline)  
+**Project**: Business Entity Resolution (Go1 + GO2 Pipeline)  
 **Date**: September 27, 2026  
 **Methodological Status**: **SUPERSEDED / EXPERIMENTAL ONLY — NOT APPROVED FOR PRODUCTION**  
 
@@ -51,4 +51,4 @@ Evaluated on `182,932` ground-truth true matching pairs:
 ### 4. Production Safety & Final Decision
 
 **KEEP BASELINE / V2. DO NOT SUBMIT S++.**  
-Original production baseline artifacts (`matching_results.tsv`, `team_submission.zip`, `arya_model.joblib`) and V2 artifacts (`matching_results_v2.tsv`, `team_submission_v2.zip`) remain locked, verified, and protected.
+Original production baseline artifacts (`matching_results.tsv`, `team_submission.zip`, `go2_model.joblib`) and V2 artifacts (`matching_results_v2.tsv`, `team_submission_v2.zip`) remain locked, verified, and protected.

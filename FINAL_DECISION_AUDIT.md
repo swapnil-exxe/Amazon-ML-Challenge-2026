@@ -1,7 +1,7 @@
 # ML Challenge 2026 — Final Decision Audit Report
 
 ## 1. Production Status Summary
-The entire end-to-end entity resolution pipeline (Manthan Phases 1–3 and ARYA Phase 4) is 100% complete, officially validated, packaged, and verified.
+The entire end-to-end entity resolution pipeline (Go1 Phases 1–3 and GO2 Phase 4) is 100% complete, officially validated, packaged, and verified.
 
 ---
 
@@ -29,7 +29,7 @@ Conducted a qualitative sanity check on 20 sampled France non-empty predictions 
 ---
 
 ## 5. Current Production Threshold Implementation
-Inspected `/Users/swapnil/Documents/ML/arya_output/run_arya_inference_only.py` lines 283–286:
+Inspected `/Users/swapnil/Documents/ML/go2_output/run_go2_inference_only.py` lines 283–286:
 - **Primary Threshold**: $p \ge 0.35$ (Selects candidates with probability $\ge 0.35$)
 - **Fallback Threshold**: $p \ge 0.30$ (If no candidate meets $0.35$, selects top candidate if $p \ge 0.30$)
 
@@ -61,9 +61,9 @@ PASS — no blocking issues found. Safe to submit.
 ---
 
 ## 8. Production Artifact Hashes (Unchanged Verification)
-- `arya_output/arya_model.joblib`: `476763ebe4051718167703dbf28e88a85ef80e2982876ccdb028508793534cad`
-- `arya_output/matching_results.tsv`: `d1c898796e2ab192b627f8d0e8ea83f96e1427b029a8d66ed9165c87bd94d1e8`
-- `manthan_output/phase_3_blocking/candidates/candidate_pairs_test_v2.tsv`: `5e0913d8c034fe02d0e1119b5a9d87b74d353557941d986c03b8930c635e714c`
+- `go2_output/go2_model.joblib`: `476763ebe4051718167703dbf28e88a85ef80e2982876ccdb028508793534cad`
+- `go2_output/matching_results.tsv`: `d1c898796e2ab192b627f8d0e8ea83f96e1427b029a8d66ed9165c87bd94d1e8`
+- `go1_output/phase_3_blocking/candidates/candidate_pairs_test_v2.tsv`: `5e0913d8c034fe02d0e1119b5a9d87b74d353557941d986c03b8930c635e714c`
 - `team_submission.zip`: `459e67da33e82ea6b052de382cbdf0805c6cbb09a5ca2138415fa6a7cd043747`
 
 ---

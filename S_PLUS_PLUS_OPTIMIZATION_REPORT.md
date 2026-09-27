@@ -1,6 +1,6 @@
 # S++ OPTIMIZATION & METHODOLOGICAL AUDIT REPORT — ML CHALLENGE 2026
 
-**Project**: Business Entity Resolution (Manthan + ARYA Pipeline)  
+**Project**: Business Entity Resolution (Go1 + GO2 Pipeline)  
 **Date**: September 27, 2026  
 **Audit Purpose**: Methodological rigor inspection, training sample evaluation, threshold selection bias audit, and production safety lock.  
 **Production Status**: **LOCKED & UNTOUCHED (Cryptographically Verified)**  
@@ -64,7 +64,7 @@ Evaluated on `182,932` ground-truth true matching pairs:
 | :--- | :--- | :--- | :---: |
 | **`matching_results.tsv`** | `d1c898796e2ab192b627f8d0e8ea83f96e1427b029a8d66ed9165c87bd94d1e8` | `d1c898796e2ab192b627f8d0e8ea83f96e1427b029a8d66ed9165c87bd94d1e8` | **UNTOUCHED (LOCKED)** |
 | **`team_submission.zip`** | `459e67da33e82ea6b052de382cbdf0805c6cbb09a5ca2138415fa6a7cd043747` | `459e67da33e82ea6b052de382cbdf0805c6cbb09a5ca2138415fa6a7cd043747` | **UNTOUCHED (LOCKED)** |
-| **`arya_model.joblib`** | `476763ebe4051718167703dbf28e88a85ef80e2982876ccdb028508793534cad` | `476763ebe4051718167703dbf28e88a85ef80e2982876ccdb028508793534cad` | **UNTOUCHED (LOCKED)** |
+| **`go2_model.joblib`** | `476763ebe4051718167703dbf28e88a85ef80e2982876ccdb028508793534cad` | `476763ebe4051718167703dbf28e88a85ef80e2982876ccdb028508793534cad` | **UNTOUCHED (LOCKED)** |
 | **`matching_results_v2.tsv`** | `56d88eb1f3b7f1e6dd23b3b626266b9cfb9b59a9257f9e9feedc6a6fc7a72d73` | `56d88eb1f3b7f1e6dd23b3b626266b9cfb9b59a9257f9e9feedc6a6fc7a72d73` | **VALIDATED** |
 | **`team_submission_v2.zip`** | `d6926b559404028a9fdd2aca167438f0cead828fb4991ede0474ee7f8ad46d7c` | `d6926b559404028a9fdd2aca167438f0cead828fb4991ede0474ee7f8ad46d7c` | **BYTE-IDENTICAL (PASS)** |
 

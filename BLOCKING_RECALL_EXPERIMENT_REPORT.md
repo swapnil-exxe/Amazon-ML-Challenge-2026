@@ -1,7 +1,7 @@
 # BLOCKING RECALL EXPERIMENT REPORT — ML CHALLENGE 2026
 
 **Date**: 2026-09-27  
-**Project**: Business Entity Resolution (Manthan + ARYA Pipeline)  
+**Project**: Business Entity Resolution (Go1 + GO2 Pipeline)  
 **Status**: READ-ONLY AUDIT & EXPERIMENTAL ANALYSIS COMPLETE  
 **Production Status**: PROTECTED & UNTOUCHED  
 
@@ -15,7 +15,7 @@ While multi-pass fuzzy/signature candidate expansion recovers a modest +1.47% of
 ---
 
 ### 2. Existing Blocking Strategy
-The production Manthan Phase 3 blocking engine utilizes a high-efficiency multi-pass inverted indexing approach strictly partitioned by region (`US`, `India`, `France`):
+The production Go1 Phase 3 blocking engine utilizes a high-efficiency multi-pass inverted indexing approach strictly partitioned by region (`US`, `India`, `France`):
 
 1. **Country Partitioning**: Hard partition by country code to prevent cross-country false candidate generation.
 2. **Exact Clean Name Match**: Matches entities sharing clean normalized business names.
@@ -90,12 +90,12 @@ We evaluated expanded multi-pass candidate generation on the training set:
   - Candidate volume grew by **+133.25%** (+828.47 million candidate pairs) for a marginal +1.47% recall gain. Gain per 1M candidates is $< 0.0018\%$.
 - **Gate C — True Match Recovery**: **PASS** (112,450 true matches recovered).
 - **Gate D — Downstream Compatibility**: **FAIL**  
-  - 1.45B candidates would cause memory thrashing and extend ARYA inference runtime beyond safety buffers.
+  - 1.45B candidates would cause memory thrashing and extend GO2 inference runtime beyond safety buffers.
 
 ---
 
 ### 8. Downstream Validation Simulation
-Running the ARYA classifier over expanded candidate sets introduces significant noise:
+Running the GO2 classifier over expanded candidate sets introduces significant noise:
 - **Baseline Validation $F_{0.5}$**: **0.760**
 - **Experimental Validation $F_{0.5}$**: **0.748** (Precision dropped due to candidate noise).
 
@@ -107,7 +107,7 @@ Running the ARYA classifier over expanded candidate sets introduces significant 
 | :--- | :--- | :--- | :---: |
 | `matching_results.tsv` | `d1c898796e2ab192b627f8d0e8ea83f96e1427b029a8d66ed9165c87bd94d1e8` | `d1c898796e2ab192b627f8d0e8ea83f96e1427b029a8d66ed9165c87bd94d1e8` | **MATCH** |
 | `team_submission.zip` | `459e67da33e82ea6b052de382cbdf0805c6cbb09a5ca2138415fa6a7cd043747` | `459e67da33e82ea6b052de382cbdf0805c6cbb09a5ca2138415fa6a7cd043747` | **MATCH** |
-| `arya_model.joblib` | `476763ebe4051718167703dbf28e88a85ef80e2982876ccdb028508793534cad` | `476763ebe4051718167703dbf28e88a85ef80e2982876ccdb028508793534cad` | **MATCH** |
+| `go2_model.joblib` | `476763ebe4051718167703dbf28e88a85ef80e2982876ccdb028508793534cad` | `476763ebe4051718167703dbf28e88a85ef80e2982876ccdb028508793534cad` | **MATCH** |
 
 ---
 

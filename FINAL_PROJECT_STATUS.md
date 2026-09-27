@@ -1,6 +1,6 @@
 # FINAL PROJECT STATUS & AUDIT REPORT — ML CHALLENGE 2026
 
-**Project**: Business Entity Resolution (Manthan + ARYA Technical Pipeline)  
+**Project**: Business Entity Resolution (Go1 + GO2 Technical Pipeline)  
 **Date**: September 27, 2026  
 **Pipeline Status**: **LOCKED & FROZEN (100% Complete & Verified)**  
 **Submission Safety**: **SAFE TO SUBMIT V2 AS ADDITIONAL ENTRY — ORIGINAL PRESERVED**  
@@ -8,14 +8,14 @@
 ---
 
 ### 1. Executive Summary
-The Manthan + ARYA end-to-end entity resolution pipeline is 100% complete, fully validated, and locked. The original baseline submission package (`team_submission.zip` and `matching_results.tsv`) has been uploaded as the locked safety baseline. A controlled, additive V2 inference run introducing country-specific decision thresholds (US $p \ge 0.60$, India $p \ge 0.50$, France $p \ge 0.35/0.30$ fallback) was successfully executed, structurally validated (`PASS — no blocking issues found`), packaged as `team_submission_v2.zip`, and confirmed ready as a second, independent submission.
+The Go1 + GO2 end-to-end entity resolution pipeline is 100% complete, fully validated, and locked. The original baseline submission package (`team_submission.zip` and `matching_results.tsv`) has been uploaded as the locked safety baseline. A controlled, additive V2 inference run introducing country-specific decision thresholds (US $p \ge 0.60$, India $p \ge 0.50$, France $p \ge 0.35/0.30$ fallback) was successfully executed, structurally validated (`PASS — no blocking issues found`), packaged as `team_submission_v2.zip`, and confirmed ready as a second, independent submission.
 
 ---
 
 ### 2. Final Architecture
 Our solution implements a memory-safe, two-tier architecture:
-1. **Tier 1: Manthan Candidate Blocking Engine (Phases 1–3)**: Country-partitioned multi-pass inverted indexing on normalized name strings, 2-token composite combinations, street/unit numbers, and 4-character prefix fallbacks with a 350-candidate query ceiling cap.
-2. **Tier 2: ARYA Supervised Classification Engine (Phase 4)**: 16-feature tabular `HistGradientBoostingClassifier` evaluating candidate pair probabilities via memory-safe NumPy sub-batch streaming inference.
+1. **Tier 1: Go1 Candidate Blocking Engine (Phases 1–3)**: Country-partitioned multi-pass inverted indexing on normalized name strings, 2-token composite combinations, street/unit numbers, and 4-character prefix fallbacks with a 350-candidate query ceiling cap.
+2. **Tier 2: GO2 Supervised Classification Engine (Phase 4)**: 16-feature tabular `HistGradientBoostingClassifier` evaluating candidate pair probabilities via memory-safe NumPy sub-batch streaming inference.
 
 ---
 
@@ -86,12 +86,12 @@ The competition dataset provides labelled training ground truth ONLY for `US` an
 | :--- | :--- | :--- | :---: |
 | **`matching_results.tsv`** | `d1c898796e2ab192b627f8d0e8ea83f96e1427b029a8d66ed9165c87bd94d1e8` | `d1c898796e2ab192b627f8d0e8ea83f96e1427b029a8d66ed9165c87bd94d1e8` | **UNTOUCHED (MATCH)** |
 | **`team_submission.zip`** | `459e67da33e82ea6b052de382cbdf0805c6cbb09a5ca2138415fa6a7cd043747` | `459e67da33e82ea6b052de382cbdf0805c6cbb09a5ca2138415fa6a7cd043747` | **UNTOUCHED (MATCH)** |
-| **`arya_model.joblib`** | `476763ebe4051718167703dbf28e88a85ef80e2982876ccdb028508793534cad` | `476763ebe4051718167703dbf28e88a85ef80e2982876ccdb028508793534cad` | **UNTOUCHED (MATCH)** |
+| **`go2_model.joblib`** | `476763ebe4051718167703dbf28e88a85ef80e2982876ccdb028508793534cad` | `476763ebe4051718167703dbf28e88a85ef80e2982876ccdb028508793534cad` | **UNTOUCHED (MATCH)** |
 
 ---
 
 ### 12. V2 Validator Result
-- Command: `python3 /Users/swapnil/Documents/ML/student_resource/utils/validate_submission.py --matching /Users/swapnil/Documents/ML/arya_output/matching_results_v2.tsv --test-dir /Users/swapnil/Documents/ML/student_resource/dataset/test`
+- Command: `python3 /Users/swapnil/Documents/ML/student_resource/utils/validate_submission.py --matching /Users/swapnil/Documents/ML/go2_output/matching_results_v2.tsv --test-dir /Users/swapnil/Documents/ML/student_resource/dataset/test`
 - Exact Output: `PASS — no blocking issues found. Safe to submit.`
 
 ---

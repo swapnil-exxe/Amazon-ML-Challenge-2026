@@ -1,13 +1,13 @@
 # ML Challenge 2026: Business Entity Resolution Solution Documentation
 
-**Team Name:** Team Swapnil / Manthan-ARYA  
-**Team Members:** Swapnil Patil (Lead ML Engineer), Sneha (Submission Lead)  
+**Team Name:** Team Swapnil / Go1-GO2  
+**Team Members:** Swapnil Patil (Lead ML Engineer), Go3 (Submission Lead)  
 **Submission Date:** September 27, 2026  
 
 ---
 
 ## 1. Executive Summary
-We present a high-precision, memory-safe, end-to-end Entity Resolution pipeline combining **Manthan** (Phases 1-3: String Cleaning & Candidate Blocking) and **ARYA** (Phase 4: ML Candidate Scoring & Dynamic Threshold Ranking). Our solution evaluates candidate pairs across 1.73 Million Source 1 test queries using a 16-feature `HistGradientBoostingClassifier`, achieving full streaming inference while maintaining a strict 1.8 GB RAM footprint and passing all official submission validation rules.
+We present a high-precision, memory-safe, end-to-end Entity Resolution pipeline combining **Go1** (Phases 1-3: String Cleaning & Candidate Blocking) and **GO2** (Phase 4: ML Candidate Scoring & Dynamic Threshold Ranking). Our solution evaluates candidate pairs across 1.73 Million Source 1 test queries using a 16-feature `HistGradientBoostingClassifier`, achieving full streaming inference while maintaining a strict 1.8 GB RAM footprint and passing all official submission validation rules.
 
 ---
 
@@ -54,7 +54,7 @@ We conducted a controlled multi-pass blocking experiment to test whether recall 
 ## 4. Machine Learning Model Architecture
 
 ### 4.1 Feature Engineering (16 Features)
-The ARYA model consumes 16 tabular similarity and structural features computed between candidate pairs:
+The GO2 model consumes 16 tabular similarity and structural features computed between candidate pairs:
 1. `name_jaccard_s2`: S1-S2 Token Jaccard Similarity on clean business names.
 2. `name_jaccard_s3`: S1-S3 Token Jaccard Similarity on clean business names.
 3. `name_prefix_match`: Boolean match of 4-character name prefixes.

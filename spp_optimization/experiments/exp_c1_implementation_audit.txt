@@ -8,10 +8,10 @@ A. FILES INSPECTED
 1. /Users/swapnil/Documents/ML/blocking_recall_audit_v2.py
 2. /Users/swapnil/Documents/ML/run_spp_blocking_failure_analysis.py
 3. /Users/swapnil/Documents/ML/run_spp_threshold_grid.py
-4. /Users/swapnil/Documents/ML/arya_output/run_arya_inference_v2.py
-5. /Users/swapnil/Documents/ML/arya_output/spp/run_arya_inference_spp.py
-6. /Users/swapnil/Documents/ML/manthan_output/archive/test_evidence_ranking.py
-7. /Users/swapnil/Documents/ML/manthan_output/phase_3_blocking/candidates/candidate_pairs_train_v2.tsv
+4. /Users/swapnil/Documents/ML/go2_output/run_go2_inference_v2.py
+5. /Users/swapnil/Documents/ML/go2_output/spp/run_go2_inference_spp.py
+6. /Users/swapnil/Documents/ML/go1_output/archive/test_evidence_ranking.py
+7. /Users/swapnil/Documents/ML/go1_output/phase_3_blocking/candidates/candidate_pairs_train_v2.tsv
 
 ================================================================================
 B. ACTUAL PIPELINE IMPLEMENTATION TRACE
@@ -19,7 +19,7 @@ B. ACTUAL PIPELINE IMPLEMENTATION TRACE
 Raw Query Entities (Source 1)
   ↓
 Data Cleaning & Standardization
-  (manthan_output/phase_2_cleaning/cleaned/clean_train_source1.tsv, etc.)
+  (go1_output/phase_2_cleaning/cleaned/clean_train_source1.tsv, etc.)
   ↓
 Inverted Token Indexing & High-Frequency Cutoffs
   (Posting list frequency limit: len(v) <= 3000 for name tokens, <= 1000 for addr/num)
@@ -33,8 +33,8 @@ Candidate Truncation Cap (Top 350)
 16 Pairwise Feature Extraction
   (Name Jaccard, Sig Jaccard, Prefix4, Addr Jaccard, Num Match, Candidate Rank, Candidate Count, etc.)
   ↓
-arya_model.joblib Classifier Prediction
-  (Loaded via joblib.load('/Users/swapnil/Documents/ML/arya_output/arya_model.joblib'))
+go2_model.joblib Classifier Prediction
+  (Loaded via joblib.load('/Users/swapnil/Documents/ML/go2_output/go2_model.joblib'))
   ↓
 Country-Specific Probability Thresholding
   (US: p >= 0.60 | India: p >= 0.50 | France/Other: p >= 0.35, fallback p >= 0.30)
@@ -52,8 +52,8 @@ C. CANDIDATE GENERATION & RANKING LOGIC
 ================================================================================
 D. FEATURE GENERATION & MODEL LOADING
 ================================================================================
-- Standard V2 pipeline loads arya_model.joblib (16 features).
-- S++ experiment pipeline uses arya_model_spp.joblib (20 features adding Levenshtein, length ratio, token overlap ratio, num overlap bool).
+- Standard V2 pipeline loads go2_model.joblib (16 features).
+- S++ experiment pipeline uses go2_model_spp.joblib (20 features adding Levenshtein, length ratio, token overlap ratio, num overlap bool).
 
 ================================================================================
 E. THRESHOLD LOGIC

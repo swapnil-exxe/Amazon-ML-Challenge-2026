@@ -15,7 +15,7 @@ GT_PATH = '/Users/swapnil/Documents/ML/student_resource/dataset/train/train_grou
 TRAIN_S1_PATH = '/Users/swapnil/Documents/ML/student_resource/dataset/train/train_source1.tsv'
 TRAIN_S2_PATH = '/Users/swapnil/Documents/ML/student_resource/dataset/train/train_source2.tsv'
 TRAIN_S3_PATH = '/Users/swapnil/Documents/ML/student_resource/dataset/train/train_source3.tsv'
-CAND_TRAIN_PATH = '/Users/swapnil/Documents/ML/manthan_output/phase_3_blocking/candidates/candidate_pairs_train_v2.tsv'
+CAND_TRAIN_PATH = '/Users/swapnil/Documents/ML/go1_output/phase_3_blocking/candidates/candidate_pairs_train_v2.tsv'
 
 print("=== PHASE 2 — MEASURING BASELINE BLOCKING RECALL ===")
 t0 = time.time()

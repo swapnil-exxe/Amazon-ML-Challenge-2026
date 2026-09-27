@@ -7,9 +7,9 @@
 ---
 
 ### 1. Completion Status
-- **Target Output File**: `/Users/swapnil/Documents/ML/arya_output/matching_results_v2.tsv`
+- **Target Output File**: `/Users/swapnil/Documents/ML/go2_output/matching_results_v2.tsv`
 - **Total Line Count**: `1,732,545` lines (Exactly 1 header + 1,732,544 data rows)
-- **Inference Process PID**: `54442` (`run_arya_inference_v2.py`)
+- **Inference Process PID**: `54442` (`run_go2_inference_v2.py`)
 - **PID Execution Status**: **FULLY EXITED** (Return code 0)
 - **Total Elapsed Runtime**: 1 Hour, 37 Minutes, 25 Seconds
 
@@ -22,7 +22,7 @@ Re-calculated SHA256 checksums for the original baseline files:
 | :--- | :--- | :--- | :---: |
 | **`matching_results.tsv`** | `d1c898796e2ab192b627f8d0e8ea83f96e1427b029a8d66ed9165c87bd94d1e8` | `d1c898796e2ab192b627f8d0e8ea83f96e1427b029a8d66ed9165c87bd94d1e8` | **MATCH** |
 | **`team_submission.zip`** | `459e67da33e82ea6b052de382cbdf0805c6cbb09a5ca2138415fa6a7cd043747` | `459e67da33e82ea6b052de382cbdf0805c6cbb09a5ca2138415fa6a7cd043747` | **MATCH** |
-| **`arya_model.joblib`** | `476763ebe4051718167703dbf28e88a85ef80e2982876ccdb028508793534cad` | `476763ebe4051718167703dbf28e88a85ef80e2982876ccdb028508793534cad` | **MATCH** |
+| **`go2_model.joblib`** | `476763ebe4051718167703dbf28e88a85ef80e2982876ccdb028508793534cad` | `476763ebe4051718167703dbf28e88a85ef80e2982876ccdb028508793534cad` | **MATCH** |
 
 > [!IMPORTANT]
 > All original baseline files remain 100% untouched and byte-for-byte identical to their original state.
@@ -33,7 +33,7 @@ Re-calculated SHA256 checksums for the original baseline files:
 Command executed:
 ```bash
 python3 /Users/swapnil/Documents/ML/student_resource/utils/validate_submission.py \
-  --matching /Users/swapnil/Documents/ML/arya_output/matching_results_v2.tsv \
+  --matching /Users/swapnil/Documents/ML/go2_output/matching_results_v2.tsv \
   --test-dir /Users/swapnil/Documents/ML/student_resource/dataset/test
 ```
 

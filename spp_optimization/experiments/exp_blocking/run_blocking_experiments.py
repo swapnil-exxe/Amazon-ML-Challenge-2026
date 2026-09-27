@@ -20,9 +20,9 @@ from collections import defaultdict
 EXPECTED_HASHES = {
     '/Users/swapnil/Documents/ML/team_submission.zip': '459e67da33e82ea6b052de382cbdf0805c6cbb09a5ca2138415fa6a7cd043747',
     '/Users/swapnil/Documents/ML/team_submission_v2.zip': 'd6926b559404028a9fdd2aca167438f0cead828fb4991ede0474ee7f8ad46d7c',
-    '/Users/swapnil/Documents/ML/arya_output/matching_results.tsv': 'd1c898796e2ab192b627f8d0e8ea83f96e1427b029a8d66ed9165c87bd94d1e8',
-    '/Users/swapnil/Documents/ML/arya_output/matching_results_v2.tsv': '56d88eb1f3b7f1e6dd23b3b626266b9cfb9b59a9257f9e9feedc6a6fc7a72d73',
-    '/Users/swapnil/Documents/ML/arya_output/arya_model.joblib': '476763ebe4051718167703dbf28e88a85ef80e2982876ccdb028508793534cad'
+    '/Users/swapnil/Documents/ML/go2_output/matching_results.tsv': 'd1c898796e2ab192b627f8d0e8ea83f96e1427b029a8d66ed9165c87bd94d1e8',
+    '/Users/swapnil/Documents/ML/go2_output/matching_results_v2.tsv': '56d88eb1f3b7f1e6dd23b3b626266b9cfb9b59a9257f9e9feedc6a6fc7a72d73',
+    '/Users/swapnil/Documents/ML/go2_output/go2_model.joblib': '476763ebe4051718167703dbf28e88a85ef80e2982876ccdb028508793534cad'
 }
 
 def verify_protected_artifacts():
@@ -83,8 +83,8 @@ def main():
     os.makedirs(blocking_dir, exist_ok=True)
 
     val_gt_path = os.path.join(exp_dir, 'val_ground_truth.tsv')
-    clean_dir = '/Users/swapnil/Documents/ML/manthan_output/phase_2_cleaning/cleaned'
-    model_path = '/Users/swapnil/Documents/ML/arya_output/arya_model.joblib'
+    clean_dir = '/Users/swapnil/Documents/ML/go1_output/phase_2_cleaning/cleaned'
+    model_path = '/Users/swapnil/Documents/ML/go2_output/go2_model.joblib'
 
     num_queries = 20000
     print(f"=== PHASE 3: BLOCKING OPTIMIZATION EXPERIMENTS ({num_queries:,} QUERIES) ===")

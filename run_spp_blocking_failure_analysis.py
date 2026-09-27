@@ -11,7 +11,7 @@ import pandas as pd
 import numpy as np
 
 GT_PATH = '/Users/swapnil/Documents/ML/student_resource/dataset/train/train_ground_truth.tsv'
-CAND_TRAIN_PATH = '/Users/swapnil/Documents/ML/manthan_output/phase_3_blocking/candidates/candidate_pairs_train_v2.tsv'
+CAND_TRAIN_PATH = '/Users/swapnil/Documents/ML/go1_output/phase_3_blocking/candidates/candidate_pairs_train_v2.tsv'
 
 print("=== QUANTITATIVE BLOCKING FAILURE ANALYSIS ===")
 t0 = time.time()

@@ -36,5 +36,5 @@ Because 7 metric requirements (including Macro $F_{0.5} = 0.8240$ vs $\ge 0.85$ 
 
 Per non-negotiable safety rules:
 1. No S++ ZIP package (`team_submission_spp.zip`) is generated.
-2. Protected production artifacts (`team_submission_v2.zip`, `team_submission.zip`, `arya_model.joblib`, `matching_results_v2.tsv`) remain 100% untouched and cryptographically verified.
+2. Protected production artifacts (`team_submission_v2.zip`, `team_submission.zip`, `go2_model.joblib`, `matching_results_v2.tsv`) remain 100% untouched and cryptographically verified.
 3. Recommended submission file remains **`/Users/swapnil/Documents/ML/team_submission_v2.zip`**.

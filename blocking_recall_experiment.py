@@ -17,8 +17,8 @@ t0 = time.time()
 
 GT_PATH = '/Users/swapnil/Documents/ML/student_resource/dataset/train/train_ground_truth.tsv'
 TRAIN_S1_PATH = '/Users/swapnil/Documents/ML/student_resource/dataset/train/train_source1.tsv'
-CAND_V2_PATH = '/Users/swapnil/Documents/ML/manthan_output/phase_3_blocking/candidates/candidate_pairs_train_v2.tsv'
-CAND_V3_PATH = '/Users/swapnil/Documents/ML/manthan_output/phase_3_blocking/candidates/candidate_pairs_train_v3.tsv'
+CAND_V2_PATH = '/Users/swapnil/Documents/ML/go1_output/phase_3_blocking/candidates/candidate_pairs_train_v2.tsv'
+CAND_V3_PATH = '/Users/swapnil/Documents/ML/go1_output/phase_3_blocking/candidates/candidate_pairs_train_v3.tsv'
 
 # Load GT
 gt_df = pd.read_csv(GT_PATH, sep='\t', dtype=str, keep_default_na=False)

@@ -18,10 +18,10 @@ t0 = time.time()
 
 BASE_DIR = '/Users/swapnil/Documents/ML'
 GT_PATH = os.path.join(BASE_DIR, 'student_resource/dataset/train/train_ground_truth.tsv')
-TRAIN_S1_PATH = os.path.join(BASE_DIR, 'manthan_output/phase_2_cleaning/cleaned/clean_train_source1.tsv')
-TRAIN_S2_PATH = os.path.join(BASE_DIR, 'manthan_output/phase_2_cleaning/cleaned/clean_train_source2.tsv')
-TRAIN_S3_PATH = os.path.join(BASE_DIR, 'manthan_output/phase_2_cleaning/cleaned/clean_train_source3.tsv')
-CAND_TRAIN_PATH = os.path.join(BASE_DIR, 'manthan_output/phase_3_blocking/candidates/candidate_pairs_train_v2.tsv')
+TRAIN_S1_PATH = os.path.join(BASE_DIR, 'go1_output/phase_2_cleaning/cleaned/clean_train_source1.tsv')
+TRAIN_S2_PATH = os.path.join(BASE_DIR, 'go1_output/phase_2_cleaning/cleaned/clean_train_source2.tsv')
+TRAIN_S3_PATH = os.path.join(BASE_DIR, 'go1_output/phase_2_cleaning/cleaned/clean_train_source3.tsv')
+CAND_TRAIN_PATH = os.path.join(BASE_DIR, 'go1_output/phase_3_blocking/candidates/candidate_pairs_train_v2.tsv')
 
 # 1. Load S1 validation split (20,000 S1 queries)
 print("Loading Ground Truth and selecting 20,000 S1 validation queries...")
